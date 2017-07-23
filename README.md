@@ -10,6 +10,8 @@ The app must fulfill these user stories:
 
 The app is built as part of [freeCodeCamp's Intermediate Front-End Projects](https://www.freecodecamp.com/challenges/show-the-local-weather).
 
+![fcc Show The Local Weather App](/weather-app@2x_iphone6_spacegrey_portrait.png)
+
 ### Installation
 
 1. `yarn install`
