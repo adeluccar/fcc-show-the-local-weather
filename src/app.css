@@ -1,0 +1,60 @@
+.container {
+  /* Rectangle: */
+  background-image: linear-gradient(-153deg, #CF3A5E 0%, #AE3A57 19%, #8D3951 38%, #6E364B 57%, #4E3144 75%, #2C2B3E 94%);
+  display: flex;
+  max-width: 640px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.row {
+  margin:5%;
+}
+
+.app__location {
+  /* Caracas, Venezuela: */
+  text-align: center;
+  font-family: Helvetica-Bold;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.app__temperature {
+  /* 76º: */
+  text-align: center;
+  font-family: Helvetica-Bold;
+  font-size: 136px;
+  color: #FFFFFF;
+  text-shadow: 0 1px 4px #4A4A4A;
+}
+
+.app__icon {
+
+}
+
+.app__summary {
+  /* Mostly cloudy: */
+  text-align: center;
+  font-family: Helvetica-Bold;
+  font-size: 32px;
+  color: #FFFFFF;
+}
+
+.app__footer {
+  /* Alberto De Lucca 2: */
+  text-align: center;
+  font-family: Helvetica-Bold;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.app__footer--light {
+  /* Powered by Dark Sky: */
+  font-family: Helvetica-Light;
+}
+
+.app_button {
+
+}
+
