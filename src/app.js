@@ -14,20 +14,31 @@ function getMyElement(className) {
   return element;
 }
 
+function displayLocation(data) {
+  getMyElement('app__location').innerHTML = data.timezone;
+  return data;
+}
+
+function displayTemperature(data) {
+  getMyElement('app__temperature').innerHTML = `${Math.round(data.currently.temperature)}º`;
+  return data;
+}
+
+function displayAppIcon(data) {
+  getMyElement('app__icon').src = `img/${data.currently.icon}.svg`;
+  return data;
+}
+
+function displaySummary(data) {
+  getMyElement('app__summary').innerHTML = data.currently.summary;
+  return data;
+}
+
 function displayWeather(data) {
-  const now = data.currently;
-
-  const appLocation = getMyElement('app__location');
-  appLocation.innerHTML = data.timezone;
-
-  const appTemperature = getMyElement('app__temperature');
-  appTemperature.innerHTML = `${Math.round(now.temperature)}º`;
-
-  const appIcon = getMyElement('app__icon');
-  appIcon.src = `img/${now.icon}.svg`;
-
-  const appSummary = getMyElement('app__summary');
-  appSummary.innerHTML = now.summary;
+  displayLocation(data);
+  displayTemperature(data);
+  displayAppIcon(data);
+  displaySummary(data);
 }
 
 fetch(url)
