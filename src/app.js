@@ -14,7 +14,7 @@ function getMyElement(className) {
   return element;
 }
 
-function setWeatherData(data) {
+function displayWeather(data) {
   const now = data.currently;
 
   const appLocation = getMyElement('app__location');
@@ -32,5 +32,5 @@ function setWeatherData(data) {
 
 fetch(url)
   .then(resp => resp.json())
-  .then(data => setWeatherData(data))
+  .then(data => displayWeather(data))
   .catch(error => console.log(error));
