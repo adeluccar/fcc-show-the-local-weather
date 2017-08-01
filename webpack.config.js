@@ -15,6 +15,7 @@ module.exports = {
     stats: 'errors-only',
     open: true,
     openPage: '',
+    hot: true,
   },
   module: {
     rules: [
@@ -52,5 +53,6 @@ module.exports = {
       title: 'Show The Local Weather App',
       template: './src/index.ejs',
     }),
+    new webpack.HotModuleReplacementPlugin(),
   ],
 };
