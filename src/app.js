@@ -41,6 +41,10 @@ function toCelsius(num) {
   return (((num - 32) * 5) / 9);
 }
 
+function toFahrenheit(num) {
+  return (((num * 9) / 5) + 32);
+}
+
 // fetch(url)
 //   .then(resp => resp.json())
 //   .then(data => displayWeather(parseForecast(data)))
