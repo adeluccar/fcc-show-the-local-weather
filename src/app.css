@@ -1,31 +1,34 @@
+html {
+  background: linear-gradient(153deg, #CF3A5E 0%, #AE3A57 19%, #8D3951 38%, #6E364B 57%, #4E3144 75%, #2C2B3E 94%);
+  height: 100%;
+}
+
 .container {
-  /* Rectangle: */
-  background-image: linear-gradient(153deg, #CF3A5E 0%, #AE3A57 19%, #8D3951 38%, #6E364B 57%, #4E3144 75%, #2C2B3E 94%);
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
   margin: auto;
 }
 
 .row {
-  margin:5%;
+  margin:2%;
 }
 
 .app__location {
   /* Caracas, Venezuela: */
-  text-align: center;
+  color: #FFFFFF;
   font-family: Helvetica-Bold;
   font-size: 14px;
-  color: #FFFFFF;
+  text-align: center;
 }
 
 .app__temperature {
   /* 76º: */
-  text-align: center;
+  color: #FFFFFF;
   font-family: Helvetica-Bold;
   font-size: 136px;
-  color: #FFFFFF;
+  text-align: center;
   text-shadow: 0 1px 4px #4A4A4A;
 }
 
@@ -35,18 +38,18 @@
 
 .app__summary {
   /* Mostly cloudy: */
-  text-align: center;
+  color: #FFFFFF;
   font-family: Helvetica-Bold;
   font-size: 32px;
-  color: #FFFFFF;
+  text-align: center;
 }
 
 .app__footer {
   /* Alberto De Lucca 2: */
-  text-align: center;
+  color: #FFFFFF;
   font-family: Helvetica-Bold;
   font-size: 14px;
-  color: #FFFFFF;
+  text-align: center;
 }
 
 .app__footer--light {
