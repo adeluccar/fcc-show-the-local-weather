@@ -37,6 +37,10 @@ function displayWeather(obj) {
   displayElement(obj, 'location');
 }
 
+function toCelsius(num) {
+  return (((num - 32) * 5) / 9);
+}
+
 // fetch(url)
 //   .then(resp => resp.json())
 //   .then(data => displayWeather(parseForecast(data)))
