@@ -32,8 +32,14 @@ html {
   text-shadow: 0 1px 4px #4A4A4A;
 }
 
-.app__icon {
+.app__button {
+  border: 1px solid white;
+  padding: 10px;
+  box-shadow: 0 1px 4px #4A4A4A;
+}
 
+.app__button:hover {
+  border: 2px solid white;
 }
 
 .app__summary {
