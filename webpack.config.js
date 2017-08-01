@@ -13,6 +13,8 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     stats: 'errors-only',
+    open: true,
+    openPage: '',
   },
   module: {
     rules: [
