@@ -24,7 +24,7 @@ function parseForecast(data) {
 }
 
 function displayElement(obj, prop) {
-  prop === 'icon'
+  prop === 'icon' //eslint-disable-line
     ? getMyElement(`app__${prop}`).src = `img/${obj[prop]}.svg`
     : getMyElement(`app__${prop}`).innerHTML = obj[prop];
   return obj;
