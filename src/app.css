@@ -1,6 +1,6 @@
 .container {
   /* Rectangle: */
-  background-image: linear-gradient(-153deg, #CF3A5E 0%, #AE3A57 19%, #8D3951 38%, #6E364B 57%, #4E3144 75%, #2C2B3E 94%);
+  background-image: linear-gradient(153deg, #CF3A5E 0%, #AE3A57 19%, #8D3951 38%, #6E364B 57%, #4E3144 75%, #2C2B3E 94%);
   display: flex;
   max-width: 640px;
   justify-content: center;
