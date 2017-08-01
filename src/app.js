@@ -14,7 +14,7 @@ function getMyElement(className) {
   return element;
 }
 
-function forecast(data) {
+function parseForecast(data) {
   const obj = {};
   obj.icon = data.currently.icon;
   obj.summary = data.currently.summary;
@@ -25,8 +25,8 @@ function forecast(data) {
 
 function displayElement(obj, prop) {
   prop === 'icon'
-  ? getMyElement(`app__${prop}`).src = `img/${obj[prop]}.svg`
-  : getMyElement(`app__${prop}`).innerHTML = obj[prop];
+    ? getMyElement(`app__${prop}`).src = `img/${obj[prop]}.svg`
+    : getMyElement(`app__${prop}`).innerHTML = obj[prop];
   return obj;
 }
 
@@ -37,7 +37,12 @@ function displayWeather(obj) {
   displayElement(obj, 'location');
 }
 
-fetch(url)
-  .then(resp => resp.json())
-  .then(data => displayWeather(forecast(data)))
-  .catch(error => console.log(error))
+// fetch(url)
+//   .then(resp => resp.json())
+//   .then(data => displayWeather(parseForecast(data)))
+//   .catch(error => console.log(error))
+
+const mockdata = '{"latitude":10.480594,"longitude":-66.903606,"timezone":"America/Caracas","offset":-4,"currently":{"time":1501607253,"summary":"Drizzle","icon":"rain","precipIntensity":0.033,"precipProbability":0.34,"precipType":"rain","temperature":77.15,"apparentTemperature":78.1,"dewPoint":68.71,"humidity":0.75,"windSpeed":4.16,"windGust":6.29,"windBearing":52,"cloudCover":0.47,"pressure":1014.16,"ozone":274.32,"uvIndex":11}}';
+
+displayWeather(parseForecast(JSON.parse(mockdata)));
+
