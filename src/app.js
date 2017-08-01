@@ -15,13 +15,14 @@ function getMyElement(className) {
 }
 
 function parseForecast(data) {
-  const obj = {};
-  obj.icon = data.currently.icon;
-  obj.summary = data.currently.summary;
-  obj.temperature = `${Math.round(data.currently.temperature)}º`;
-  obj.location = data.timezone;
-  return obj;
+  return {
+    icon: data.currently.icon,
+    summary: data.currently.summary,
+    temperature: `${Math.round(data.currently.temperature)}º`,
+    location: data.timezone,
+  };
 }
+
 
 function displayElement(obj, prop) {
   prop === 'icon'
