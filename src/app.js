@@ -14,34 +14,30 @@ function getMyElement(className) {
   return element;
 }
 
-function displayLocation(data) {
-  getMyElement('app__location').innerHTML = data.timezone;
-  return data;
+function forecast(data) {
+  const obj = {};
+  obj.icon = data.currently.icon;
+  obj.summary = data.currently.summary;
+  obj.temperature = `${Math.round(data.currently.temperature)}º`;
+  obj.location = data.timezone;
+  return obj;
 }
 
-function displayTemperature(data) {
-  getMyElement('app__temperature').innerHTML = `${Math.round(data.currently.temperature)}º`;
-  return data;
+function displayElement(obj, prop) {
+  prop === 'icon'
+  ? getMyElement(`app__${prop}`).src = `img/${obj[prop]}.svg`
+  : getMyElement(`app__${prop}`).innerHTML = obj[prop];
+  return obj;
 }
 
-function displayAppIcon(data) {
-  getMyElement('app__icon').src = `img/${data.currently.icon}.svg`;
-  return data;
-}
-
-function displaySummary(data) {
-  getMyElement('app__summary').innerHTML = data.currently.summary;
-  return data;
-}
-
-function displayWeather(data) {
-  displayLocation(data);
-  displayTemperature(data);
-  displayAppIcon(data);
-  displaySummary(data);
+function displayWeather(obj) {
+  displayElement(obj, 'icon');
+  displayElement(obj, 'summary');
+  displayElement(obj, 'temperature');
+  displayElement(obj, 'location');
 }
 
 fetch(url)
   .then(resp => resp.json())
-  .then(data => displayWeather(data))
-  .catch(error => console.log(error));
+  .then(data => displayWeather(forecast(data)))
+  .catch(error => console.log(error))
