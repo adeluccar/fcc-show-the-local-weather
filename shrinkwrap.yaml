@@ -8,6 +8,7 @@ devDependencies:
   eslint: 3.19.0
   eslint-config-airbnb-base: 11.3.1
   eslint-plugin-import: 2.7.0
+  file-loader: 0.11.2
   html-webpack-plugin: 2.30.1
   style-loader: 0.18.2
   webpack: 3.4.1
@@ -1482,6 +1483,12 @@ packages:
     dev: true
     resolution:
       integrity: sha1-w5KZDD5oR4PYOLjISkXYoEhFg2E=
+  /file-loader/0.11.2:
+    dependencies:
+      loader-utils: 1.1.0
+    dev: true
+    resolution:
+      integrity: sha512-N+uhF3mswIFeziHQjGScJ/yHXYt3DiLBeC+9vWW+WjUBiClMSOlV1YrXQi+7KM2aA3Rn4Bybgv+uXFQbfkzpvg==
   /filename-regex/2.0.1:
     dev: true
     resolution:
@@ -3528,6 +3535,7 @@ specifiers:
   eslint: ^3.19.0
   eslint-config-airbnb-base: ^11.2.0
   eslint-plugin-import: ^2.7.0
+  file-loader: ^0.11.2
   html-webpack-plugin: ^2.29.0
   normalize.css: ^7.0.0
   style-loader: ^0.18.2
