@@ -47,12 +47,12 @@ function convertUnits() {
     getMyElement('app__temperature').innerHTML = `${toCelsius(getMyElement('app__temperature').innerHTML.slice(0, -1))}º`;
     button.classList.remove('is-fahrenheit');
     button.classList.add('is-celsius');
-    button.src = 'img/celsius.svg';
+    button.src = 'img/fahrenheit.svg';
   } else {
     getMyElement('app__temperature').innerHTML = `${toFahrenheit(getMyElement('app__temperature').innerHTML.slice(0, -1))}º`;
     button.classList.remove('is-celsius');
     button.classList.add('is-fahrenheit');
-    button.src = 'img/fahrenheit.svg';
+    button.src = 'img/celsius.svg';
   }
 }
 
