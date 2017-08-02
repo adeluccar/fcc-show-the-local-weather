@@ -14,7 +14,9 @@ The app is built as part of [freeCodeCamp's Intermediate Front-End Projects](htt
 
 ### Installation
 
-1. `yarn install`
+1. `pnpm install` 
+
+Or the usual `npm install`, but I prefer [pnpm](https://github.com/pnpm/pnpm) for managing node packages.
 
 ### Contributing
 
@@ -26,4 +28,4 @@ The app is built as part of [freeCodeCamp's Intermediate Front-End Projects](htt
 
 ### License
 
-This project is licensed under the MIT Licens - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
