@@ -9,6 +9,7 @@ The app must fulfill these user stories:
 3. I can push a button to toggle between Fahrenheit and Celsius.
 
 The app is built as part of [freeCodeCamp's Intermediate Front-End Projects](https://www.freecodecamp.com/challenges/show-the-local-weather).
+View the result [here](https://adeluccar.github.io/fcc-show-the-local-weather) (make sure your navigator supports location)
 
 ![fcc Show The Local Weather App](/weather-app@2x_iphone6_spacegrey_portrait.png)
 
