@@ -2,7 +2,7 @@
   "scripts": {
     "dev": "webpack-dev-server",
     "prod": "webpack -p",
-    "deploy": "push-dir --dir=dist --branch=gh-pages"
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
