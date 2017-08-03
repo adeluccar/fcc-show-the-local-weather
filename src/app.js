@@ -68,7 +68,7 @@ function okPosition(position) {
 }
 
 function errorPosition() {
-  alert('weird stuff happened');
+  alert('Location permission is needed to use the app');
 }
 
 if ('geolocation' in navigator) {
